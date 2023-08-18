@@ -1,18 +1,23 @@
-import me from '../app/avatar.jpg';
+import me from "../app/avatar.jpg"
 
-export const name = 'Jason Southin';
-export const avatar = me;
+export const name = "Jason Southin"
+export const avatar = me
+const yearsCoding = Math.abs(
+  new Date("09/03/2018").getFullYear() - new Date().getFullYear()
+)
 export const about = () => {
   return (
     <>
-      Hey, I'm a developer who loves Next.js. I work at BigCo or CoolStartup as a Software Engineer.
+      Hey, I have been a developer for <strong>{yearsCoding}</strong> years, I
+      work at Newsteam as a Software Engineer.
     </>
-  );
-};
+  )
+}
 export const bio = () => {
   return (
     <>
-      When I'm not coding, I'm probably playing video games or coding. I also love to travel and explore new places.
+      When I'm not coding, I'm probably playing video games or coding. I also
+      love to travel and explore new places.
     </>
-  );
-};
+  )
+}

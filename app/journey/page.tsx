@@ -8,7 +8,9 @@ import {
   LinkedInIcon,
   ArrowDownIcon,
   BridgeCardsIcon,
+  ArrowUpIcon,
 } from "components/icons"
+import Publications from "components/publications"
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -23,7 +25,7 @@ export default function AboutPage() {
         A list of projects i created, ordered by years of experience:
       </p>
       <h2 className="font-bold text-xl font-serif underline underline-offset-8">
-        Year 1:
+        Year 1 (2018):
       </h2>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>My very first introduction into coding.</p>
@@ -38,14 +40,14 @@ export default function AboutPage() {
           </a>{" "}
           for him.
         </p>
-        <p>
+        <div>
           Tech stack:
           <ul>
             <li>Langauges: Vanilla JS, HTML, CSS</li>
             <li>Database: Firebase Realtime Database</li>
             <li>Hosting: Firebase Hosting</li>
           </ul>
-        </p>
+        </div>
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -76,11 +78,11 @@ export default function AboutPage() {
           a single HTML file to creative websites i surfed upon.
         </p>
         <p>
-          Regardless of my degree ( having not studied this career path ) i
-          decided to start applying and stumbled my way into my first job.
+          Regardless of my degree ( a bachalors in business ) i decided to start
+          applying for dev positions and stumbled my way into my first job.
         </p>
         <div className="flex justify-center">
-          <ArrowDownIcon />
+          <ArrowUpIcon />
         </div>
         <h2 className="font-bold text-base font-serif ">
           First Job:{" "}
@@ -109,7 +111,7 @@ export default function AboutPage() {
           </a>
           .
         </p>
-        <p>
+        <div>
           Tech stack:
           <ul>
             <li>Langauges: Angular JS, Nodejs, Sass / Html</li>
@@ -118,7 +120,7 @@ export default function AboutPage() {
             <li>CDN: Amazon Cloudfront</li>
             <li>Testing Tools: Cypress</li>
           </ul>
-        </p>
+        </div>
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -140,7 +142,7 @@ export default function AboutPage() {
         <h3 className="font-bold text-base font-serif underline-offset-8">
           Overview:{" "}
         </h3>
-        <p>
+        <div>
           This was a very similar implementation to Uber Eats:
           <ul>
             <li>
@@ -153,18 +155,18 @@ export default function AboutPage() {
               customer with live tracking.
             </li>
           </ul>
-        </p>
-        <p>
+        </div>
+        <div>
           Skills learnt this year:
           <ul>
             <li>NodeJs / AngularJs / Javascript / Webpack</li>
             <li>Google Integrations: Maps / Analytics</li>
             <li>Frontend testing tool: Cypress</li>
           </ul>
-        </p>
+        </div>
         <hr />
         <h2 className="font-bold text-xl font-serif underline underline-offset-8">
-          Year 2:
+          Year 2 (2019):
         </h2>
         <p>
           It was time for my next advernture using my newly gained experience to
@@ -181,75 +183,289 @@ export default function AboutPage() {
           </a>
         </h2>
         <p>
-          My role in the company was to develop and grow the existing 15
+          My role in the company was to develop and grow the existing
           international news publications within the company.
         </p>
         <p>Job title: Full stack engineer</p>
-        <p>
+        {/* <div>
           Tech Stack:
           <ul>
             <li>Langauges: Python / Javascript / SQL / React / CSS / HTML </li>
             <li>Hosting: GCP, App Engine </li>
             <li>Tools: Grunt / Docker</li>
             <li>Templeting Langauges: Jinja2 </li>
-            <li>Web services: GA / GTM / GAM / DFP / Google Looker Studio</li>
+            <li>
+              Web services: GA / GTM / GAM / DFP / Google Looker Studio /
+              Elastic Search
+            </li>
             <li>
               Integrations: Google News Room / Viafoura / Taboola / Chartbeat /
               Disqus{" "}
             </li>
             <li>Streaming Langauges: Benthos</li>
           </ul>
-        </p>
+        </div> */}
         <h3 className="font-bold text-base font-serif underline-offset-8">
-          Side Project:{" "}
+          Side Projects:{" "}
         </h3>
-        <p>
-          A lesson booking website for an International grandmaster of bridge -
-          Tim Cope.{" "}
-        </p>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="http://www.bridgewithtim.co.za/"
-          className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-        >
-          <div className="flex items-center justify-center overflow-hidden h-full">
-            <BridgeCardsIcon />
-            <div className="ml-3">Bridge With Tim</div>
-          </div>
-          <ArrowIcon />
-        </a>
-        <p>
+        <ul className="list-decimal">
+          <li>
+            <p>
+              A promotional website for a local Muay Thai gym in Cape Town. The
+              site primary use is to promote upcoming events / view pricing and
+              schedules of the gym.
+            </p>
+            <p>
+              Fun Fact: During covid, home training session articles where added
+              for memebers.
+            </p>
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: Python / JS / Jinja2 / HTML / SCSS </li>
+                <li>CMS: CosMos</li>
+                <li>Hosting: GCP</li>
+              </ul>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.thaiholics.com/"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/images/thaiholics.png"
+                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={30}
+                  height={30}
+                  alt="Thaiholics"
+                />
+                <div className="ml-3">Thaiholics</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+          <li>
+            <p>
+              A lesson booking website for an International grandmaster of
+              bridge - Tim Cope.{" "}
+            </p>
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: JS / HTML / CSS / jQuery </li>
+                <li>Hosting: FTP (FileZilla)</li>
+              </ul>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="http://www.bridgewithtim.co.za/"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <BridgeCardsIcon />
+                <div className="ml-3">Bridge With Tim</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+        </ul>
+        <div>
           Skills learnt this year:
           <ul>
-            <li>CSS / SQL / Python</li>
-            <li>Elastic Search</li>
-            <li>Jinaj2</li>
-            <li>Google news room / GTM</li>
+            <li>Python / Jinja2 / SCSS</li>
+            <li>Google Tag Manager / Google Analytics </li>
+            <li>Google news room</li>
+            <li>FileZilla (Free File Transfer Protocol solution)</li>
           </ul>
-        </p>
+        </div>
         <h2 className="font-bold text-xl font-serif underline underline-offset-8">
-          Year 3:
+          Year 3 (2020):
         </h2>
-        <p>I creat</p>
+        <p>it's time to put my business degree to use.</p>
+        <p>
+          A friend contacts me and asks if i want to start an advertising
+          company with him, i thought what a great way to put my business and
+          coding skills to the test.
+        </p>
+        <h3 className="font-bold text-base font-serif underline-offset-8">
+          First Business:{" "}
+        </h3>
+        <ul className="list-decimal">
+          <li>
+            <p>
+              50% Off was born, the company was committed to providing easy
+              access to in-store discounts, replace all printed promotions, and
+              eradicate environmental waste all at our fingertips reach.
+            </p>
+            <p>
+              The website functioned as a place to view the best deals/discounts
+              from a wide range of products uploaded by all the stores in south
+              africa. Its hope was to replace in-store catalogs for product
+              promotion and bigger reach for smaller companies
+            </p>
+
+            <div className="flex justify-between my-10">
+              <div className="border-r pr-10">
+                Tech Stack (2020):
+                <ul>
+                  <li>Langauges: JS / CSS </li>
+                  <li>Routing: Express</li>
+                  <li>Bundler: Webpack</li>
+                  <li>Database: MongoDB Compass</li>
+                  <li>CMS: Strapi</li>
+                  <li>Templating: EJS</li>
+                  <li>Search: Elastic Search</li>
+                  <li>Hosting: Heroku Free Tier</li>
+                </ul>
+              </div>
+              <div>
+                Rebuild: Tech Stack (2021):
+                <ul>
+                  <li>Langauges: Typescript / React / SCSS </li>
+                  <li>Framework: NextJs</li>
+                  <li>Database: SQL</li>
+                  <li>CMS: Strapi</li>
+                  <li>Search: Elastic Search</li>
+                  <li>Hosting: GCP App Engine</li>
+                  <li>Tracking: GTM </li>
+                  <li>Auth: NextAuth </li>
+                </ul>
+              </div>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://next50.vercel.app/"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/images/50off.png"
+                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={50}
+                  height={50}
+                  alt="50%Off"
+                />
+                <div className="ml-3">50% Off</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+        </ul>
+        <h3 className="font-bold text-base font-serif underline-offset-8">
+          Work:{" "}
+        </h3>
+        <p>Converting a publication to a PWA</p>
+        <div>
+          Tech Stack:
+          <ul>
+            <li>Langauges: React / Typescript / Tailwindcss </li>
+            <li>Hosting: Vercel </li>
+            <li>Tools: Docker</li>
+            <li>Integrations: Disqus</li>
+          </ul>
+        </div>
+        <div>
+          Skills learnt this year:
+          <ul>
+            <li>Webpack / Babel / Docker </li>
+            <li>Tailwindcss / Typescript / React </li>
+            <li>Send Grid / Mail Chimp</li>
+            <li>Mongo DB / Heroku Hosting / SQL</li>
+            <li>Google Search Console</li>
+            <li>Service Workers</li>
+            <li>EJS</li>
+          </ul>
+        </div>
+        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+          Year 4 (2021):
+        </h2>
+        <p>At this point my responsibilities grew at newsteam:</p>
+        <div>
+          <ul>
+            <li>Third-party integrations (Viafoura, disqus , Ad services)</li>
+            <li>
+              Advertisment creation / management using GAM/DFP on websites (
+              Google ads manager )
+            </li>
+            <li>
+              User Tracking: A/B Testing / Tracking Reports with GA / Kibana /
+              Looker
+            </li>
+            <li>Training junior developers</li>
+          </ul>
+        </div>
+        <h3 className="font-bold text-base font-serif underline-offset-8">
+          Side Projects:{" "}
+        </h3>
+        <ul className="list-decimal">
+          <li>
+            <p>
+              A website for a wedding company located in South Africa, Cape Town
+            </p>
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: React / Typescript / Tailwindcss </li>
+                <li>Markdown: MDX</li>
+                <li>Hosting: Vercel</li>
+                <li>Mail: Sendgrid</li>
+              </ul>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://divine-agency.vercel.app/"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/images/divine.png"
+                  className="transform bg-white rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={30}
+                  height={30}
+                  alt="50% Off"
+                />
+                <div className="ml-3">Divine Coordination</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+          <li>
+            I rebuilt 50% Off - for easier future maintenance (Tech stack
+            referenced above).
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://next50.vercel.app/"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/images/50off.png"
+                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={50}
+                  height={50}
+                  alt="50%Off"
+                />
+                <div className="ml-3">50% Off</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+        </ul>
+        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+          Year 5 (2022):
+        </h2>
+        This year i spent learning skills such as building streaming pipelines,
+        https://hayibo.io
+        <br />
+        https://jasonsouthin.io
       </div>
       <br />
-      https://next50-pg4vo28tv-50off.vercel.app/
-      <h2>Year 4:</h2>
-      <p>
-        My resposiblities grew in newsteam:
-        <ul>
-          <li>Third-party integrations (Mux, Viafoura, disqus etc.)</li>,
-          <li>Advertisment creation using GAM ( Google ads manager )</li>
-          <li></li>
-        </ul>
-      </p>
-      This year i spent learning skills such as building streaming pipelines,
-      third-party integrations (Mux, Viafoura, disqus etc.), advertisment
-      creation using GAM ( Google ads manager ), user tracking, docker builds,
-      grunt, NextJS https://hayibo.io
-      <br />
-      https://jasonsouthin.io
     </section>
   )
 }

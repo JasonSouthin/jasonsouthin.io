@@ -13,10 +13,6 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  const yearsCoding = Math.abs(
-    new Date("09/03/2019").getFullYear() - new Date().getFullYear()
-  )
-
   return (
     <section>
       <h1 className="font-bold text-3xl font-serif">About Me</h1>
@@ -49,13 +45,19 @@ export default function AboutPage() {
         <h1 className="font-bold text-3xl font-serif">Skills</h1>
         <ul>
           <li>
-            Languages: JavaScript (vanilla, TypeScript, jQuery), HTML, CSS, and
-            Python, React, Svelte, SQL
+            Languages: JavaScript (vanilla, jQuery), TypeScript, HTML, CSS,
+            Python, SQL, React
           </li>
-          <li>Front-end Frameworks: React / NextJS / Angular / Jinja2</li>
+          <li>Front-end Frameworks: NextJS / Angular</li>
+          <li>Templating: Jinja2 / EJS / Marko</li>
           <li>Databases: PlanetScale, MySql, PostgreSQL, MongoDB</li>
-          <li>Cloud Providers: GCP / Strapi / Heroku / Redis </li>
+          <li>Cloud Providers: GCP / Strapi / Heroku / Redis / Upstash </li>
           <li>Knowldge in Advertisments / Advertisment Management ( GAM ) </li>
+          <li>
+            Knowldge in user tracking / analytics / reports ( GTM / Kibana /
+            Looker studio ){" "}
+          </li>
+          <li>Knowldge in Search ( Elastic / Fuzzy ) </li>
         </ul>
         <hr />
         <h1 className="font-bold text-3xl font-serif">Qaulifications</h1>

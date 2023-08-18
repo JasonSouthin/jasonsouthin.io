@@ -73,11 +73,11 @@ export function LinkedInIcon() {
       className="with-icon_icon__MHUeb"
       data-testid="geist-icon"
       height="24"
-      shape-rendering="geometricPrecision"
+      shapeRendering="geometricPrecision"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       viewBox="0 0 24 24"
       width="24"
     >
@@ -95,20 +95,41 @@ export function LinkedInIcon() {
 export function ArrowDownIcon() {
   return (
     <svg
-      class="with-icon_icon__MHUeb"
+      className="with-icon_icon__MHUeb"
       data-testid="geist-icon"
       fill="none"
       height="24"
-      shape-rendering="geometricPrecision"
+      shapeRendering="geometricPrecision"
       stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
       viewBox="0 0 24 24"
       width="24"
     >
       <path d="M12 5v14" />
       <path d="M19 12l-7 7-7-7" />
+    </svg>
+  )
+}
+
+export function ArrowUpIcon() {
+  return (
+    <svg
+      className="with-icon_icon__MHUeb"
+      data-testid="geist-icon"
+      fill="none"
+      height="24"
+      shapeRendering="geometricPrecision"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
     </svg>
   )
 }
@@ -148,7 +169,7 @@ export function SpotifyIcon() {
 export function BridgeCardsIcon() {
   return (
     <svg
-      enable-background="new 0 0 256 256"
+      enableBackground="new 0 0 256 256"
       version="1.1"
       viewBox="0 0 256 256"
       width="35"
