@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+
 import {
   GitHubIcon,
   SpotifyIcon,
@@ -6,6 +7,8 @@ import {
   TwitterIcon,
   LinkedInIcon,
 } from "components/icons"
+import PdfViewer from "components/pdf"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "About",
@@ -52,6 +55,7 @@ export default function AboutPage() {
           <li>Templating: Jinja2 / EJS / Marko</li>
           <li>Databases: PlanetScale, MySql, PostgreSQL, MongoDB</li>
           <li>Cloud Providers: GCP / Strapi / Heroku / Redis / Upstash </li>
+          <li>CMS: Strapi / Sanity / Contentful</li>
           <li>Knowldge in Advertisments / Advertisment Management ( GAM ) </li>
           <li>
             Knowldge in user tracking / analytics / reports ( GTM / Kibana /
@@ -66,6 +70,8 @@ export default function AboutPage() {
           Africa.
         </p>
         <p>Majors: Information Systems, Economics, Management</p>
+
+        <PdfViewer src="/pdf/transcript.pdf" title="University transcript" />
         <hr />
         <h1 className="font-bold text-3xl font-serif">Qualities</h1>
         <ul>
@@ -96,7 +102,13 @@ export default function AboutPage() {
             Platforms: Contentful / Sanity / Shopify / Bigcommerce.
             <br />I am currently building in{" "}
             <b>
-              <a href="https://medusajs.com/">Medusa.js</a>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://medusajs.com/"
+              >
+                Medusa.js
+              </a>
             </b>
           </li>
           <li>
@@ -104,6 +116,7 @@ export default function AboutPage() {
             tools for my trade and I am always looking for the next best tool.
           </li>
         </ul>
+        <hr />
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a
             rel="noopener noreferrer"

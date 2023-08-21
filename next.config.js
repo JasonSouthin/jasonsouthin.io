@@ -42,7 +42,6 @@ const ContentSecurityPolicy = `
     img-src * blob: data:;
     media-src 'none';
     child-src example.com;
-  style-src 'self' example.com;
     connect-src *;
     font-src 'self';
 `

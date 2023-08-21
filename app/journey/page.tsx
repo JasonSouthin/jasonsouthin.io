@@ -10,21 +10,21 @@ import {
   BridgeCardsIcon,
   ArrowUpIcon,
 } from "components/icons"
-import Publications from "components/publications"
+import Publications from "components/projects"
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Website project experience",
+  title: "My Journey",
+  description: "My development journey",
 }
 
-export default function AboutPage() {
+export default function Journey() {
   return (
     <section>
-      <h1 className="font-bold text-3xl font-serif ">Journey</h1>
+      <h1 className="font-bold text-3xl  ">Journey</h1>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
-        A list of projects i created, ordered by years of experience:
+        My development journey, ordered by years of experience:
       </p>
-      <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+      <h2 className="font-bold text-xl underline underline-offset-8">
         Year 1 (2018):
       </h2>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
@@ -74,17 +74,18 @@ export default function AboutPage() {
           <ArrowDownIcon />
         </div>
         <p>
-          This created an addication to build more , from something as simple as
-          a single HTML file to creative websites i surfed upon.
+          However this created an addication to build more , from something as
+          simple as a single HTML file to creative websites i surfed upon.
         </p>
         <p>
           Regardless of my degree ( a bachalors in business ) i decided to start
-          applying for dev positions and stumbled my way into my first job.
+          applying for developer positions and stumbled my way into my first
+          job.
         </p>
         <div className="flex justify-center">
           <ArrowUpIcon />
         </div>
-        <h2 className="font-bold text-base font-serif ">
+        <h2 className="font-bold text-base  ">
           First Job:{" "}
           <a
             rel="noopener noreferrer"
@@ -139,9 +140,7 @@ export default function AboutPage() {
           </div>
           <ArrowIcon />
         </a>
-        <h3 className="font-bold text-base font-serif underline-offset-8">
-          Overview:{" "}
-        </h3>
+        <h3 className="font-bold text-base  underline-offset-8">Overview: </h3>
         <div>
           This was a very similar implementation to Uber Eats:
           <ul>
@@ -165,14 +164,14 @@ export default function AboutPage() {
           </ul>
         </div>
         <hr />
-        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+        <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 2 (2019):
         </h2>
         <p>
           It was time for my next advernture using my newly gained experience to
           get my second job.
         </p>
-        <h2 className="font-bold text-base font-serif ">
+        <h2 className="font-bold text-base mt-0">
           Second Job:{" "}
           <a
             rel="noopener noreferrer"
@@ -205,7 +204,7 @@ export default function AboutPage() {
             <li>Streaming Langauges: Benthos</li>
           </ul>
         </div> */}
-        <h3 className="font-bold text-base font-serif underline-offset-8">
+        <h3 className="font-bold text-base  underline-offset-8">
           Side Projects:{" "}
         </h3>
         <ul className="list-decimal">
@@ -281,7 +280,8 @@ export default function AboutPage() {
             <li>FileZilla (Free File Transfer Protocol solution)</li>
           </ul>
         </div>
-        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+        <hr />
+        <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 3 (2020):
         </h2>
         <p>it's time to put my business degree to use.</p>
@@ -290,15 +290,22 @@ export default function AboutPage() {
           company with him, i thought what a great way to put my business and
           coding skills to the test.
         </p>
-        <h3 className="font-bold text-base font-serif underline-offset-8">
+        <h2 className="font-bold text-base  ">
           First Business:{" "}
-        </h3>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://next50.vercel.app/"
+          >
+            50% Off
+          </a>
+        </h2>
         <ul className="list-decimal">
           <li>
             <p>
-              50% Off was born, the company was committed to providing easy
-              access to in-store discounts, replace all printed promotions, and
-              eradicate environmental waste all at our fingertips reach.
+              The company was committed to providing easy access to in-store
+              discounts, replace all printed promotions, and eradicate
+              environmental waste all at our fingertips reach.
             </p>
             <p>
               The website functioned as a place to view the best deals/discounts
@@ -329,7 +336,7 @@ export default function AboutPage() {
                   <li>Database: SQL</li>
                   <li>CMS: Strapi</li>
                   <li>Search: Elastic Search</li>
-                  <li>Hosting: GCP App Engine</li>
+                  <li>Hosting: Vercel / GCP App Engine</li>
                   <li>Tracking: GTM </li>
                   <li>Auth: NextAuth </li>
                 </ul>
@@ -355,9 +362,7 @@ export default function AboutPage() {
             </a>
           </li>
         </ul>
-        <h3 className="font-bold text-base font-serif underline-offset-8">
-          Work:{" "}
-        </h3>
+        <h3 className="font-bold text-base  underline-offset-8">Work: </h3>
         <p>Converting a publication to a PWA</p>
         <div>
           Tech Stack:
@@ -380,7 +385,8 @@ export default function AboutPage() {
             <li>EJS</li>
           </ul>
         </div>
-        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+        <hr />
+        <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 4 (2021):
         </h2>
         <p>At this point my responsibilities grew at newsteam:</p>
@@ -398,7 +404,7 @@ export default function AboutPage() {
             <li>Training junior developers</li>
           </ul>
         </div>
-        <h3 className="font-bold text-base font-serif underline-offset-8">
+        <h3 className="font-bold text-base  underline-offset-8">
           Side Projects:{" "}
         </h3>
         <ul className="list-decimal">
@@ -457,13 +463,129 @@ export default function AboutPage() {
             </a>
           </li>
         </ul>
-        <h2 className="font-bold text-xl font-serif underline underline-offset-8">
+        <div>
+          Skills learnt this year:
+          <ul>
+            <li>
+              Upscaling skills: Tailwindcss / Typescript / React / GCP / Docker
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 5 (2022):
         </h2>
-        This year i spent learning skills such as building streaming pipelines,
-        https://hayibo.io
-        <br />
-        https://jasonsouthin.io
+        <p></p>
+        <h2 className="font-bold text-base  ">
+          Second Business:{" "}
+          <a rel="noopener noreferrer" target="_blank" href="https://hayibo.io">
+            Hayibo
+          </a>
+        </h2>
+        <ul className="list-decimal">
+          <li>
+            <p>
+              Hayibo is a luxury subscription box company based in Cape Town,
+              South Africa. We deliver top-brand luxury items to our customers
+              on a monthly basis, including whiskey, watches, jewellery, and
+              more. Our goal is to make it easy for our customers to enjoy the
+              finer things in life without having to worry about the hassle of
+              shopping.
+            </p>
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: Typescript / React / CSS </li>
+                <li>Framework: NextJs</li>
+                <li>Database: SQL</li>
+                <li>CMS: Strapi</li>
+                <li>Search: Elastic Search</li>
+                <li>Hosting: Vercel / GCP Cloud Run</li>
+                <li>Tracking: GTM / Splitbee </li>
+              </ul>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://hayibo.io"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/images/hayibo.png"
+                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={40}
+                  height={40}
+                  alt="Hayibo"
+                />
+                <div className="ml-3">Hayibo</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+        </ul>
+        <div>
+          Skills learnt this year:
+          <ul>
+            <li>Building stream pipelines</li>
+            <li>Webhook / API architecture</li>
+            <li>
+              Integrations: South African payment providers ( Stitch / Pasy Fast
+              ){" "}
+            </li>
+            <li>How to run a small start-up ( Taxes, Salaries etc.)</li>
+          </ul>
+        </div>
+        <hr />
+        <h2 className="font-bold text-xl  underline underline-offset-8">
+          Year 6 (2023):
+        </h2>
+        <h2 className="font-bold text-base  ">
+          Portfolio:{" "}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://jasonsouthin.io"
+          >
+            jasonsouthin.io
+          </a>
+        </h2>
+        <ul className="list-decimal">
+          <li>
+            <p>
+              I wanted to create a simple portfolio for a visual representation
+              of who i am and my skills.
+            </p>
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: Typescript / React / css </li>
+                <li>Framework: NextJs</li>
+                <li>Database: PlanetScale</li>
+                <li>Hosting: Vercel </li>
+                <li>Tracking: Splitbee </li>
+              </ul>
+            </div>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://jasonsouthin.io"
+              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+            >
+              <div className="flex items-center justify-center overflow-hidden h-full">
+                <Image
+                  src="/og.jpg"
+                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  width={40}
+                  height={40}
+                  alt="Hayibo"
+                />
+                <div className="ml-3">Jason Southin</div>
+              </div>
+              <ArrowIcon />
+            </a>
+          </li>
+        </ul>
       </div>
       <br />
     </section>
