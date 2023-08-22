@@ -41,7 +41,8 @@ const ContentSecurityPolicy = `
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';
-    child-src example.com;
+    frame-src 'http://localhost:3000/' 'https://jasonsouthin-io.vercel.app/';
+    child-src 'http://localhost:3000' 'https://jasonsouthin-io.vercel.app/';
     connect-src *;
     font-src 'self';
 `
@@ -60,7 +61,7 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {
     key: "X-Frame-Options",
-    value: "DENY",
+    value: "SAMEORIGIN",
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
   {

@@ -1,21 +1,28 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 
 import {
   GitHubIcon,
   SpotifyIcon,
   ArrowIcon,
-  TwitterIcon,
   LinkedInIcon,
 } from "components/icons"
-import PdfViewer from "components/pdf"
-import Image from "next/image"
+
+import Link from "next/link"
+import Modal from "components/modal"
+
+type Props = {
+  searchParams: Record<string, string> | null | undefined
+}
 
 export const metadata: Metadata = {
   title: "About",
   description: "Full Stack Engineer at Newsteam",
 }
 
-export default function AboutPage() {
+export default function AboutPage({ searchParams }: Props) {
+  const showModal = searchParams?.modal
+
   return (
     <section>
       <h1 className="font-bold text-3xl font-serif">About Me</h1>
@@ -25,8 +32,8 @@ export default function AboutPage() {
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>
           I'm currently a <b>Full stack engineer at Newsteam</b>, where I build
-          and maintain 15 international news publications. I focus on{" "}
-          <b>developing and growing</b> the Newsteam websites and capablities.
+          and maintain international news publications. I focus on{" "}
+          <b>developing and growing</b> the newsteam websites and capablities.
         </p>
         <hr />
         <p>
@@ -70,8 +77,38 @@ export default function AboutPage() {
           Africa.
         </p>
         <p>Majors: Information Systems, Economics, Management</p>
-
-        <PdfViewer src="/pdf/transcript.pdf" title="University transcript" />
+        <Link
+          href="/about?modal=true"
+          scroll={false}
+          className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between m-0"
+        >
+          <div className="flex items-center justify-center overflow-hidden h-full min-h-[3rem]">
+            <Image
+              src="/images/rhodes.jpeg"
+              className="transform rounded-xl transition-transform duration-500 object-contain p-1"
+              width={40}
+              height={40}
+              alt="Rhodes university transcript"
+            />
+            <div className="ml-2">Transcript </div>
+          </div>
+          <ArrowIcon />
+        </Link>
+        {showModal && (
+          <Modal title="Transcript">
+            <object
+              className="w-full h-[45rem]"
+              type="application/pdf"
+              data="/pdf/transcript.pdf"
+            >
+              <p>
+                It appears your browser doesn't support embedded PDFs. You can{" "}
+                <Link href="/pdf/transcript.pdf">download the PDF</Link>{" "}
+                instead.
+              </p>
+            </object>
+          </Modal>
+        )}
         <hr />
         <h1 className="font-bold text-3xl font-serif">Qualities</h1>
         <ul>

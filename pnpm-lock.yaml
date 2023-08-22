@@ -7,9 +7,6 @@ dependencies:
   '@planetscale/database':
     specifier: ^1.9.0
     version: 1.9.0
-  '@simplepdf/react-embed-pdf':
-    specifier: ^1.4.0
-    version: 1.4.0(react-dom@18.2.0)(react@18.2.0)
   '@vercel/analytics':
     specifier: ^1.0.1
     version: 1.0.1
@@ -1109,16 +1106,6 @@ packages:
     dependencies:
       fflate: 0.7.4
       string.prototype.codepointat: 0.2.1
-    dev: false
-
-  /@simplepdf/react-embed-pdf@1.4.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Z1qhflPZlTAi8oN6BpbXM4wS64CUC3SnRwgWEmogqmNwsHf9SX8Dx6xZIDkuSF5jgn2R6j/PsI8QDLcp4T1vYQ==}
-    peerDependencies:
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@swc/helpers@0.5.1:

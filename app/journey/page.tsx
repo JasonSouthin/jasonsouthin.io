@@ -30,15 +30,15 @@ export default function Journey() {
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>My very first introduction into coding.</p>
         <p>
-          A friend wanted a website to sell his drone racing parts, so I created{" "}
+          To help my friend sell his drone racing parts online, i created a
+          webiste called{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://tinyrc.co.za/products/productsAll.html"
           >
             Tinyrc
-          </a>{" "}
-          for him.
+          </a>
         </p>
         <div>
           Tech stack:
@@ -67,20 +67,21 @@ export default function Journey() {
           <ArrowIcon />
         </a>
         <p>
-          It was a terrible implentation of a website. It was janky and had a
-          phew hicups, yet it worked and made him sales.
+          The website was a terrible implementation, janky and with a few
+          hiccups, but it still worked and made sales.
         </p>
         <div className="flex justify-center">
           <ArrowDownIcon />
         </div>
         <p>
-          However this created an addication to build more , from something as
-          simple as a single HTML file to creative websites i surfed upon.
+          I found stimulation and joy in the struggle of creating my first
+          website. I wanted to build things from simple HTML files to the
+          creative websites I saw online.
         </p>
         <p>
-          Regardless of my degree ( a bachalors in business ) i decided to start
-          applying for developer positions and stumbled my way into my first
-          job.
+          Despite having a bachelor's degree in business, I decided to start
+          applying for developer positions to improve my skills and eventually
+          landed my first job.
         </p>
         <div className="flex justify-center">
           <ArrowUpIcon />
@@ -93,30 +94,33 @@ export default function Journey() {
             href="https://tallorderpos.com/"
           >
             TallOrder.com
-          </a>
+          </a>{" "}
+          - 1 yr 2 mos
         </h2>
         <p>
           My role in the company was to create an online food ordering and
           delivery platform.
         </p>
-        <p>Job title: Full stack engineer</p>
         <p>
-          The website would intergrate with many resturants using the existing
-          POS (Point of sale) system. I spent a year to create{" "}
+          <b>Job title</b>: Full stack engineer
+        </p>
+        <p>
+          I spent a year creating{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://togo.tallorder.mobi/"
           >
             Togo
-          </a>
-          .
+          </a>{" "}
+          a webiste that would integrate with many restaurants using their
+          existing POS (point-of-sale) systems.
         </p>
         <div>
           Tech stack:
           <ul>
-            <li>Langauges: Angular JS, Nodejs, Sass / Html</li>
-            <li>Backend: AWS Lamda</li>
+            <li>Langauges: Angular JS, Sass / Html</li>
+            <li>Backend: AWS Lamda / Nodejs</li>
             <li>Database/Hosting: Amazon S3</li>
             <li>CDN: Amazon Cloudfront</li>
             <li>Testing Tools: Cypress</li>
@@ -168,8 +172,8 @@ export default function Journey() {
           Year 2 (2019):
         </h2>
         <p>
-          It was time for my next advernture using my newly gained experience to
-          get my second job.
+          Armed with my newly gained experience, I was eager to embark on my
+          next adventure and determined to get my second job.
         </p>
         <h2 className="font-bold text-base mt-0">
           Second Job:{" "}
@@ -179,13 +183,16 @@ export default function Journey() {
             href="https://newsteam.io"
           >
             Newsteam.io
-          </a>
+          </a>{" "}
+          - 4 yr 5 mos
         </h2>
         <p>
           My role in the company was to develop and grow the existing
           international news publications within the company.
         </p>
-        <p>Job title: Full stack engineer</p>
+        <p>
+          <b>Job title</b>: Full stack engineer
+        </p>
         {/* <div>
           Tech Stack:
           <ul>
@@ -284,10 +291,14 @@ export default function Journey() {
         <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 3 (2020):
         </h2>
-        <p>it's time to put my business degree to use.</p>
         <p>
-          A friend contacts me and asks if i want to start an advertising
-          company with him, i thought what a great way to put my business and
+          After many hours of banging my head against the wall, I was finally
+          starting to get the hang of coding. I thought it was time to put my
+          business degree to use.
+        </p>
+        <p>
+          My friend called me with a proposition: start an advertising company
+          together. I thought it would be the perfect way to put my business and
           coding skills to the test.
         </p>
         <h2 className="font-bold text-base  ">
@@ -300,70 +311,68 @@ export default function Journey() {
             50% Off
           </a>
         </h2>
-        <ul className="list-decimal">
-          <li>
-            <p>
-              The company was committed to providing easy access to in-store
-              discounts, replace all printed promotions, and eradicate
-              environmental waste all at our fingertips reach.
-            </p>
-            <p>
-              The website functioned as a place to view the best deals/discounts
-              from a wide range of products uploaded by all the stores in south
-              africa. Its hope was to replace in-store catalogs for product
-              promotion and bigger reach for smaller companies
-            </p>
+        <p>
+          The company was committed to providing easy access to in-store
+          discounts, replace all printed promotions, and eradicate environmental
+          waste all at our fingertips reach.
+        </p>
+        <p>
+          The website functioned as a place to view the best deals/discounts
+          from a wide range of products uploaded by all the stores in south
+          africa. Its hope was to replace in-store catalogs for product
+          promotion and bigger reach for smaller companies
+        </p>
 
-            <div className="flex justify-between my-10">
-              <div className="border-r pr-10">
-                Tech Stack (2020):
-                <ul>
-                  <li>Langauges: JS / CSS </li>
-                  <li>Routing: Express</li>
-                  <li>Bundler: Webpack</li>
-                  <li>Database: MongoDB Compass</li>
-                  <li>CMS: Strapi</li>
-                  <li>Templating: EJS</li>
-                  <li>Search: Elastic Search</li>
-                  <li>Hosting: Heroku Free Tier</li>
-                </ul>
-              </div>
-              <div>
-                Rebuild: Tech Stack (2021):
-                <ul>
-                  <li>Langauges: Typescript / React / SCSS </li>
-                  <li>Framework: NextJs</li>
-                  <li>Database: SQL</li>
-                  <li>CMS: Strapi</li>
-                  <li>Search: Elastic Search</li>
-                  <li>Hosting: Vercel / GCP App Engine</li>
-                  <li>Tracking: GTM </li>
-                  <li>Auth: NextAuth </li>
-                </ul>
-              </div>
-            </div>
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://next50.vercel.app/"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-            >
-              <div className="flex items-center justify-center overflow-hidden h-full">
-                <Image
-                  src="/images/50off.png"
-                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
-                  width={50}
-                  height={50}
-                  alt="50%Off"
-                />
-                <div className="ml-3">50% Off</div>
-              </div>
-              <ArrowIcon />
-            </a>
-          </li>
-        </ul>
-        <h3 className="font-bold text-base  underline-offset-8">Work: </h3>
-        <p>Converting a publication to a PWA</p>
+        <div className="lg:flex justify-between my-10 sm:block">
+          <div className="border-r pr-10">
+            Tech Stack (2020):
+            <ul>
+              <li>Langauges: JS / CSS </li>
+              <li>Routing: Express</li>
+              <li>Bundler: Webpack</li>
+              <li>Database: MongoDB Compass</li>
+              <li>CMS: Strapi</li>
+              <li>Templating: EJS</li>
+              <li>Search: Elastic Search</li>
+              <li>Hosting: Heroku Free Tier</li>
+            </ul>
+          </div>
+          <div>
+            Rebuild: Tech Stack (2021):
+            <ul>
+              <li>Langauges: Typescript / React / SCSS </li>
+              <li>Framework: NextJs</li>
+              <li>Database: SQL</li>
+              <li>CMS: Strapi</li>
+              <li>Search: Elastic Search</li>
+              <li>Hosting: Vercel / GCP App Engine</li>
+              <li>Tracking: GTM </li>
+              <li>Auth: NextAuth </li>
+            </ul>
+          </div>
+        </div>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://next50.vercel.app/"
+          className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+        >
+          <div className="flex items-center justify-center overflow-hidden h-full">
+            <Image
+              src="/images/50off.png"
+              className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+              width={50}
+              height={50}
+              alt="50%Off"
+            />
+            <div className="ml-3">50% Off</div>
+          </div>
+          <ArrowIcon />
+        </a>
+        <h3 className="font-bold text-base  underline-offset-8">
+          Work project:{" "}
+        </h3>
+        <p>Port an existing publication to React.</p>
         <div>
           Tech Stack:
           <ul>
@@ -389,7 +398,10 @@ export default function Journey() {
         <h2 className="font-bold text-xl  underline underline-offset-8">
           Year 4 (2021):
         </h2>
-        <p>At this point my responsibilities grew at newsteam:</p>
+        <p>
+          As my skills and experience grew, I was given more responsibility at
+          Newsteam.
+        </p>
         <div>
           <ul>
             <li>Third-party integrations (Viafoura, disqus , Ad services)</li>
@@ -410,7 +422,7 @@ export default function Journey() {
         <ul className="list-decimal">
           <li>
             <p>
-              A website for a wedding company located in South Africa, Cape Town
+              A website for a wedding company based in Cape Town, South Africa.
             </p>
             <div>
               Tech Stack:
@@ -441,8 +453,20 @@ export default function Journey() {
             </a>
           </li>
           <li>
-            I rebuilt 50% Off - for easier future maintenance (Tech stack
-            referenced above).
+            I rebuilt 50% Off with a focus on future maintenance.
+            <div>
+              Tech Stack:
+              <ul>
+                <li>Langauges: Typescript / React / SCSS </li>
+                <li>Framework: NextJs</li>
+                <li>Database: SQL</li>
+                <li>CMS: Strapi</li>
+                <li>Search: Elastic Search</li>
+                <li>Hosting: Vercel / GCP App Engine</li>
+                <li>Tracking: GTM </li>
+                <li>Auth: NextAuth </li>
+              </ul>
+            </div>
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -468,6 +492,8 @@ export default function Journey() {
           <ul>
             <li>
               Upscaling skills: Tailwindcss / Typescript / React / GCP / Docker
+              / Analytics / User Tracking / NextJs / Strapi / Backend
+              architecture
             </li>
           </ul>
         </div>
@@ -482,49 +508,55 @@ export default function Journey() {
             Hayibo
           </a>
         </h2>
-        <ul className="list-decimal">
-          <li>
-            <p>
-              Hayibo is a luxury subscription box company based in Cape Town,
-              South Africa. We deliver top-brand luxury items to our customers
-              on a monthly basis, including whiskey, watches, jewellery, and
-              more. Our goal is to make it easy for our customers to enjoy the
-              finer things in life without having to worry about the hassle of
-              shopping.
-            </p>
-            <div>
-              Tech Stack:
-              <ul>
-                <li>Langauges: Typescript / React / CSS </li>
-                <li>Framework: NextJs</li>
-                <li>Database: SQL</li>
-                <li>CMS: Strapi</li>
-                <li>Search: Elastic Search</li>
-                <li>Hosting: Vercel / GCP Cloud Run</li>
-                <li>Tracking: GTM / Splitbee </li>
-              </ul>
-            </div>
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://hayibo.io"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
-            >
-              <div className="flex items-center justify-center overflow-hidden h-full">
-                <Image
-                  src="/images/hayibo.png"
-                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
-                  width={40}
-                  height={40}
-                  alt="Hayibo"
-                />
-                <div className="ml-3">Hayibo</div>
-              </div>
-              <ArrowIcon />
-            </a>
-          </li>
-        </ul>
+        <p>
+          Hayibo is a luxury subscription box company based in Cape Town, South
+          Africa. We deliver top-brand luxury items to our customers on a
+          monthly basis, including whiskey, watches, jewellery, and more. Our
+          goal is to make it easy for our customers to enjoy the finer things in
+          life without having to worry about the hassle of shopping.
+        </p>
         <div>
+          Tech Stack:
+          <ul>
+            <li>Langauges: Typescript / React / CSS </li>
+            <li>Framework: NextJs</li>
+            <li>Database: SQL</li>
+            <li>
+              Payment Provider:{" "}
+              <a
+                href="https://stitch.money/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Stitch
+              </a>
+            </li>
+            <li>CMS: Strapi</li>
+            <li>Search: Elastic Search</li>
+            <li>Hosting: Vercel / GCP Cloud Run</li>
+            <li>Tracking: GTM / Splitbee </li>
+          </ul>
+        </div>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://hayibo.io"
+          className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+        >
+          <div className="flex items-center justify-center overflow-hidden h-full">
+            <Image
+              src="/images/hayibo.png"
+              className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+              width={40}
+              height={40}
+              alt="Hayibo"
+            />
+            <div className="ml-3">Hayibo</div>
+          </div>
+          <ArrowIcon />
+        </a>
+
+        <div className="mt-5">
           Skills learnt this year:
           <ul>
             <li>Building stream pipelines</li>
@@ -553,13 +585,13 @@ export default function Journey() {
         <ul className="list-decimal">
           <li>
             <p>
-              I wanted to create a simple portfolio for a visual representation
-              of who i am and my skills.
+              I wanted to create a simple portfolio to showcase my skills and
+              experience
             </p>
             <div>
               Tech Stack:
               <ul>
-                <li>Langauges: Typescript / React / css </li>
+                <li>Langauges: Typescript / React / Css </li>
                 <li>Framework: NextJs</li>
                 <li>Database: PlanetScale</li>
                 <li>Hosting: Vercel </li>
@@ -586,6 +618,14 @@ export default function Journey() {
             </a>
           </li>
         </ul>
+        <div>
+          Skills learnt this year:
+          <ul>
+            <li>PlanetScale</li>
+            <li>Spotify integration</li>
+            <li>Localization - i18n</li>
+          </ul>
+        </div>
       </div>
       <br />
     </section>

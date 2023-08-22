@@ -6,9 +6,9 @@ import clsx from "clsx"
 
 export default function ProjectComponent() {
   return (
-    <ul className="grid grid-rows-2 grid-cols-3 list-none gap-y-8 gap-x-5">
+    <ul className="grid grid-rows-2 lg:grid-cols-3 grid-cols-2 list-none gap-y-8 gap-x-5">
       <Project
-        src="/images/tinyrc.png"
+        src="/images/tinyRc.png"
         title="TinyRc"
         link="tinyrc.co.za"
         bg="bg-white"
