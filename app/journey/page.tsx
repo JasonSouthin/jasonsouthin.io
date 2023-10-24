@@ -26,8 +26,8 @@ export default function Journey() {
         My development journey, ordered by years of experience:
       </p>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
-        <hr className="mt-3 pb-6" />
-        <Accordion heading="Year 1 (2018):">
+        <div />
+        <Accordion heading="2018">
           <div>
             <p>My very first introduction into coding.</p>
             <p>
@@ -173,7 +173,7 @@ export default function Journey() {
           </div>
         </Accordion>
         <hr className="mt-3 mb-2" />
-        <Accordion heading="Year 2 (2019):">
+        <Accordion heading="2019">
           <div>
             <p>
               Armed with my newly gained experience, I was eager to embark on my
@@ -294,7 +294,7 @@ export default function Journey() {
           </div>
         </Accordion>
         <hr className="mt-3 mb-2" />
-        <Accordion heading="Year 3 (2020):">
+        <Accordion heading="2020">
           <div>
             <p>
               After many hours of banging my head against the wall, I was
@@ -402,7 +402,7 @@ export default function Journey() {
           </div>
         </Accordion>
         <hr className="mt-3 mb-2" />
-        <Accordion heading=" Year 4 (2021):">
+        <Accordion heading="2021">
           <div>
             <p>
               As my skills and experience grew, I was given more responsibility
@@ -509,7 +509,7 @@ export default function Journey() {
           </div>
         </Accordion>
         <hr className="mt-3 mb-2" />
-        <Accordion heading="Year 5 (2022):">
+        <Accordion heading="2022">
           <div>
             <h2 className="font-bold text-base  ">
               Second Business:{" "}
@@ -585,7 +585,7 @@ export default function Journey() {
           </div>
         </Accordion>
         <hr className="mt-3 mb-2" />
-        <Accordion heading="Year 6 (2023):">
+        <Accordion heading="2023">
           <div>
             <h2 className="font-bold text-base  ">
               Portfolio:{" "}

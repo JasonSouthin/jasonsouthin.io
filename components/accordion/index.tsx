@@ -25,7 +25,7 @@ const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
         <RadixAccordion.Item className={style.accordionItem} value={`item-z`}>
           <RadixAccordion.Header className={style.accordionHeader}>
             <RadixAccordion.Trigger className={style.accordionTrigger}>
-              <span>{heading}</span>
+              <h4 className="text-base">{heading}</h4>
               <ChevronDownIcon aria-hidden className={style.accordionChevron} />
             </RadixAccordion.Trigger>
           </RadixAccordion.Header>
