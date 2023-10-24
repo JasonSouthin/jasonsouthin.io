@@ -7,19 +7,31 @@ import clsx from "clsx"
 export default function ProjectComponent() {
   return (
     <ul className="grid grid-rows-2 lg:grid-cols-3 grid-cols-2 list-none gap-y-8 gap-x-5">
+      {/* <Project
+        src="/og.jpg"
+        title="Jason Southin"
+        link="jasonsouthin.io"
+        year="2023"
+      /> */}
       <Project
-        src="/images/tinyRc.png"
-        title="TinyRc"
-        link="tinyrc.co.za"
-        bg="bg-white"
-        year="2018"
+        src="/images/hayibo.png"
+        title="Hayibo"
+        link="hayibo.io"
+        year="2022"
       />
       <Project
-        src="/images/togo.png"
-        title="Togo"
-        link="togo.tallorder.mobi"
+        src="/images/50off.png"
+        title="50% Off"
+        link="next50.vercel.app/50off"
+        year="2020"
+        closed={true}
+      />
+      <Project
+        src="/images/divine.png"
+        title="Divine Coordination"
+        link="divine-agency.vercel.app"
+        year="2021"
         bg="bg-white"
-        year="2018"
       />
       <Project
         src="/images/thaiholics.png"
@@ -34,38 +46,29 @@ export default function ProjectComponent() {
         year="2019"
       />
       <Project
-        src="/images/50off.png"
-        title="50% Off"
-        link="next50.vercel.app"
-        year="2020"
-      />
-      <Project
-        src="/images/divine.png"
-        title="Divine Coordination"
-        link="divine-agency.vercel.app"
-        year="2021"
+        src="/images/togo.png"
+        title="Togo"
+        link="togo.tallorder.mobi"
         bg="bg-white"
+        year="2018"
       />
       <Project
-        src="/images/hayibo.png"
-        title="Hayibo"
-        link="hayibo.io"
-        year="2022"
-      />
-      <Project
-        src="/og.jpg"
-        title="Jason Southin"
-        link="jasonsouthin.io"
-        year="2023"
+        src="/images/tinyRc.png"
+        title="TinyRc"
+        link="tinyrc.co.za"
+        bg="bg-white"
+        year="2018"
       />
     </ul>
   )
 }
 
-function Project({ src, title, link, bg, year }: Project) {
+function Project({ src, title, link, bg, year, closed }: Project) {
   return (
     <li>
-      <p className="text-neutral-400 text-xs">{year}</p>
+      <p className="text-neutral-400 text-xs">
+        {year} {closed ? "(Shut down)" : undefined}
+      </p>
       <a
         rel="noopener noreferrer"
         target="_blank"
@@ -81,8 +84,8 @@ function Project({ src, title, link, bg, year }: Project) {
                 [`${bg}`]: bg,
               }
             )}
-            width={35}
-            height={35}
+            width={40}
+            height={40}
             alt={title}
           />
           <div className="ml-2">{title} </div>

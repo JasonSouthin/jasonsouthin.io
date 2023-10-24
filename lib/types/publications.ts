@@ -4,4 +4,5 @@ interface Project {
   link: string
   bg?: string
   year: string
+  closed?: boolean
 }
