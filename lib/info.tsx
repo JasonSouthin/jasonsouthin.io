@@ -2,14 +2,19 @@ import me from "../app/avatar.jpg"
 
 export const name = "Jason Southin"
 export const avatar = me
-const yearsCoding = Math.abs(
-  new Date("09/03/2018").getFullYear() - new Date().getFullYear()
-)
+
 export const about = () => {
+  const yearsCoding = Math.abs(
+    new Date("09/03/2018").getFullYear() - new Date().getFullYear()
+  )
+  const today = new Date()
+  let month = today.getMonth() + 1
+
   return (
     <>
-      Hey, I have been a developer for <strong>{yearsCoding}</strong> years, I
-      work at Newsteam as a Software Engineer.
+      Hey, I have been a developer for <strong>{yearsCoding}</strong> years and{" "}
+      <strong>{month}</strong> months, I work at Newsteam as a Software
+      Engineer.
     </>
   )
 }
