@@ -20,13 +20,6 @@ export default function ProjectComponent() {
         year="2022"
       />
       <Project
-        src="/images/50off.png"
-        title="50% Off"
-        link="next50.vercel.app/50off"
-        year="2020"
-        closed={true}
-      />
-      <Project
         src="/images/divine.png"
         title="Divine Coordination"
         link="divine-agency.vercel.app"
