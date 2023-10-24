@@ -32,7 +32,17 @@ export default function UsesPage() {
             )
           </li>
           <li>Theme: One Dark Pro</li>
-          <li>Terminal: Hyper / zsh</li>
+          <li>
+            Terminal: Hyper (
+            <a href="https://gist.github.com/JasonSouthin/cc92446067f4f4522108e03a2565cd33">
+              Settings
+            </a>
+            ) / zsh (
+            <a href="https://gist.github.com/JasonSouthin/278137a555094ab3e240ab782f7dcedb">
+              Settings
+            </a>
+            )
+          </li>
         </ul>
         <h3 id="software">Software</h3>
         <ul>
