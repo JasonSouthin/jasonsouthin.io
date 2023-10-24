@@ -33,23 +33,23 @@ export default function AboutPage({ searchParams }: Props) {
         <p>
           I'm currently a <b>Full stack engineer at Newsteam</b>, where I build
           and maintain international news publications. I focus on{" "}
-          <b>developing and growing</b> the newsteam websites and capablities.
+          <b>developing and growing</b> the newsteam websites and capabilities.
         </p>
         <hr />
         <p>
           I'm passionate about many creative pursuits, including gaming,
-          business, and of course, coding. This combination of interests is what
+          business, and obviously, coding. This combination of interests is what
           ultimately led me to my current role in building websites.
         </p>
         <p>
-          I <b>love</b> building for the web. From something as simple as a
-          single HTML file – all the way to large e-commerce applications. The
-          web is incredible. Anyone can become a developer, writer, or creator –
-          and no one has to ask for permission. You can just build.
+          I <b>love</b> building for the web from something as simple as a
+          single HTML file – to large e-commerce applications. The web is
+          incredible. Anyone can become a developer, writer, or creator – and no
+          one has to ask for permission. You can just build.
         </p>
         <p className="mb-8">
-          Outside of work, I <b>build and develop</b> personal ecommerce
-          projects. I also do UI/UX design, company developing and AD ops.
+          Outside of work, I <b>build and develop</b> personal e-commerce
+          projects. I also do UI/UX design, company development, and AD ops.
         </p>
         <hr />
         <h1 className="font-bold text-3xl font-serif">Skills</h1>
@@ -125,14 +125,14 @@ export default function AboutPage({ searchParams }: Props) {
           </li>
           <li>
             <b>I take responsibility for my actions:</b> I am accountable for my
-            work and I always strive to do my best. I am also willing to admit
-            when I make mistakes and I am always looking for ways to improve.
+            work and I always strive to do my best. I'm also willing to admit
+            when I make mistakes and i'm always looking for ways to improve.
           </li>
           <li>
-            <b>I have great knowledge in the Ecommerce world:</b> I try stay
-            up-to-date on the latest Ecommerce trends. I am also familiar with a
-            variety of ecommerce platforms and I am able to use them to create
-            effective ecommerce webistes.
+            <b>I have knowledge in the Ecommerce world: </b> I strive to stay
+            up-to-date on the latest e-commerce trends. I am also familiar with
+            a variety of e-commerce platforms and can use them to create
+            effective e-commerce websites.
             <br />I have built custom E-commerce solutions from payment to
             logistics.
             <br />
@@ -150,7 +150,7 @@ export default function AboutPage({ searchParams }: Props) {
           </li>
           <li>
             <b>I use the latest tools for development:</b> I enjoy learning new
-            tools for my trade and I am always looking for the next best tool.
+            tools for my craft and am always searching for the next best tool.
           </li>
         </ul>
         <hr />
