@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Uses',
+  title: "Uses",
   description:
     "Here's what tech I'm currently using for coding, videos, and music.",
-};
+}
 
 export default function UsesPage() {
   return (
@@ -49,10 +49,10 @@ export default function UsesPage() {
           <li>Apple Airpods Pro</li>
           <li>Apple Watch</li>
           <li>Apple iPhone</li>
-          <li>Ipad mini series 6</li>
+          <li>Apple Ipad mini series 6</li>
           <li>BMW 1 series 2019</li>
         </ul>
       </div>
     </section>
-  );
+  )
 }
