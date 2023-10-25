@@ -13,17 +13,11 @@ import { Spotify } from "lib/types/spotify"
 export const revalidate = 60
 
 export default async function HomePage() {
-  let tracks, views, githubCount
-
-  try {
-    ;[tracks, views, githubCount] = await Promise.all([
-      getTopTracks(),
-      getBlogViews(),
-      getGithubContributions(),
-    ])
-  } catch (error) {
-    console.error(error)
-  }
+  let [tracks, views, githubCount] = await Promise.all([
+    getTopTracks(),
+    getBlogViews(),
+    getGithubContributions(),
+  ])
 
   return (
     <section>
