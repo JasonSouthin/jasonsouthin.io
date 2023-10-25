@@ -71,7 +71,9 @@ export default function RootLayout({
         kaisei.variable
       )}
     >
-      <script async src="https://cdn.splitbee.io/sb.js"></script>
+      <head>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
+      </head>
       <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-2 w-full lg:mt-32 lg:mx-auto relative overflow-scroll">
         <NextTopLoader color="#808080" />
         <Sidebar />
