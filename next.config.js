@@ -41,8 +41,8 @@ const ContentSecurityPolicy = `
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';
-    frame-src 'http://localhost:3000/' 'https://jasonsouthin.vercel.app/';
-    child-src 'http://localhost:3000' 'https://jasonsouthin.vercel.app/';
+    frame-src 'http://localhost:3000/' 'https://jasonsouthin.vercel.app' 'https://cdn.splitbee.io/sb.js';
+    child-src 'http://localhost:3000' 'https://jasonsouthin.vercel.app' 'https://cdn.splitbee.io/sb.js';
     connect-src *;
     font-src 'self';
 `
