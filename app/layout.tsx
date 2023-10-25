@@ -5,6 +5,7 @@ import localFont from "next/font/local"
 import Sidebar from "../components/sidebar"
 import { Analytics } from "@vercel/analytics/react"
 import NextTopLoader from "nextjs-toploader"
+import Script from "next/script"
 
 const kaisei = localFont({
   src: "../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
@@ -72,7 +73,10 @@ export default function RootLayout({
       )}
     >
       <head>
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
+        <Script
+          src="https://cdn.splitbee.io/sb.js"
+          strategy="lazyOnload"
+        ></Script>
       </head>
       <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-2 w-full lg:mt-32 lg:mx-auto relative overflow-scroll">
         <NextTopLoader color="#808080" />
