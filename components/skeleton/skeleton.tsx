@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Skeleton() {
   return (
-    <div className="font-loading">
+    <div className="font-loading flex gap-2 flex-col">
       <a
         rel="noopener noreferrer"
         target="_blank"

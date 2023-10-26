@@ -37,12 +37,12 @@ const nextConfig = {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' 'https://cdn.splitbee.io/sb.js' 'https://jasonsouthin.vercel.app' 'https://jasonsouthin.vercel.app/';
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' 'https://cdn.splitbee.io/sb.js';
     style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
     media-src 'none';
-    frame-src 'http://localhost:3000/' 'https://jasonsouthin.vercel.app' 'https://jasonsouthin.vercel.app/' 'https://cdn.splitbee.io/sb.js';
-    child-src 'http://localhost:3000' 'https://jasonsouthin.vercel.app' 'https://jasonsouthin.vercel.app/' 'https://cdn.splitbee.io/sb.js';
+    frame-src 'http://localhost:3000/' 'https://jasonsouthin.vercel.app';
+    child-src 'http://localhost:3000' 'https://jasonsouthin.vercel.app';
     connect-src *;
     font-src 'self';
 `
