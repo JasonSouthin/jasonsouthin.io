@@ -1,24 +1,14 @@
 import Link from "next/link"
 import Image from "next/image"
-import {
-  getBlogViews,
-  getGithubContributions,
-  getStarCount,
-  getTopTracks,
-} from "lib/metrics"
+import { getBlogViews, getGithubContributions, getTopTracks } from "lib/metrics"
 import { ArrowIcon, SpotifyIcon, GitHubIcon, ViewsIcon } from "components/icons"
 import { name, about, bio, avatar } from "lib/info"
-import { Spotify } from "lib/types/spotify"
+import { Suspense } from "react"
+import { Skeleton } from "components/skeleton/skeleton"
 
 export const revalidate = 60
 
 export default async function HomePage() {
-  let [tracks, views, githubCount] = await Promise.all([
-    getTopTracks(),
-    getBlogViews(),
-    getGithubContributions(),
-  ])
-
   return (
     <section>
       <h1 className="font-bold text-3xl font-serif">{name}</h1>
@@ -36,37 +26,9 @@ export default async function HomePage() {
           priority
         />
         <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/JasonSouthin"
-            className="flex items-center gap-2"
-          >
-            <GitHubIcon />
-            {`${githubCount?.toLocaleString()} contributions in the last year`}
-          </a>
-          <div className="flex items-center gap-2">
-            <SpotifyIcon />
-            {tracks?.map((track, index) =>
-              track ? (
-                <a
-                  key={track.songUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={track.songUrl}
-                >
-                  <span className="hover:underline">{`#${index + 1} ${
-                    track.title
-                  } `}</span>
-                  <span>- top track this month</span>
-                </a>
-              ) : undefined
-            )}
-          </div>
-          <Link href="/blog" className="flex items-center">
-            <ViewsIcon />
-            {`${views?.toLocaleString()} blog views all time`}
-          </Link>
+          <Suspense fallback={<Skeleton />}>
+            <PeronsalInformation />
+          </Suspense>
         </div>
       </div>
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
@@ -97,5 +59,57 @@ export default async function HomePage() {
         </li>
       </ul>
     </section>
+  )
+}
+
+async function PeronsalInformation() {
+  let tracks, views, githubCount
+
+  try {
+    ;[tracks, views, githubCount] = await Promise.all([
+      getTopTracks(),
+      getBlogViews(),
+      getGithubContributions(),
+    ])
+  } catch (error) {
+    console.error(error)
+  }
+
+  return (
+    <>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://github.com/JasonSouthin"
+        className="flex items-center gap-2"
+      >
+        <GitHubIcon />
+        {`${githubCount?.toLocaleString()} contributions in the last year`}
+      </a>
+      <div className="flex items-center gap-2">
+        <SpotifyIcon />
+        <Suspense fallback="loading...">
+          {tracks?.map((track, index) =>
+            track ? (
+              <a
+                key={track.songUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+                href={track.songUrl}
+              >
+                <span className="hover:underline">{`#${index + 1} ${
+                  track.title
+                } `}</span>
+                <span>- top track this month</span>
+              </a>
+            ) : undefined
+          )}
+        </Suspense>
+      </div>
+      <Link href="/blog" className="flex items-center">
+        <ViewsIcon />
+        {`${views?.toLocaleString()} blog views all time`}
+      </Link>
+    </>
   )
 }

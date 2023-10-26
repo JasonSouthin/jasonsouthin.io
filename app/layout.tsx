@@ -14,6 +14,12 @@ const kaisei = localFont({
   display: "swap",
 })
 
+const loadingFont = localFont({
+  src: "../public/fonts/redactedScript-regular.ttf",
+  weight: "700",
+  variable: "--font-loading",
+})
+
 export const metadata: Metadata = {
   title: {
     default: "Jason Southin",
@@ -69,7 +75,8 @@ export default function RootLayout({
       lang="en"
       className={clsx(
         "text-black bg-white dark:text-white dark:bg-[#111010]",
-        kaisei.variable
+        kaisei.variable,
+        loadingFont.variable
       )}
     >
       <head>
