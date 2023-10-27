@@ -75,7 +75,7 @@ async function PeronsalInformation() {
     console.error(error)
   }
 
-  return (
+  return githubCount && tracks && views ? (
     <>
       <a
         rel="noopener noreferrer"
@@ -88,28 +88,28 @@ async function PeronsalInformation() {
       </a>
       <div className="flex items-center gap-2">
         <SpotifyIcon />
-        <Suspense fallback="loading...">
-          {tracks?.map((track, index) =>
-            track ? (
-              <a
-                key={track.songUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-                href={track.songUrl}
-              >
-                <span className="hover:underline">{`#${index + 1} ${
-                  track.title
-                } `}</span>
-                <span>- top track this month</span>
-              </a>
-            ) : undefined
-          )}
-        </Suspense>
+        {tracks?.map((track, index) =>
+          track ? (
+            <a
+              key={track.songUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+              href={track.songUrl}
+            >
+              <span className="hover:underline">{`#${index + 1} ${
+                track.title
+              } `}</span>
+              <span>- top track this month</span>
+            </a>
+          ) : undefined
+        )}
       </div>
       <Link href="/blog" className="flex items-center">
         <ViewsIcon />
         {`${views?.toLocaleString()} blog views all time`}
       </Link>
     </>
+  ) : (
+    <Skeleton />
   )
 }
