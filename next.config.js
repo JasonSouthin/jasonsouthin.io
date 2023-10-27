@@ -15,7 +15,7 @@ const nextConfig = {
     ],
   },
   experimental: {
-    appDir: true,
+    serverActions: true,
   },
   redirects() {
     try {
@@ -34,25 +34,7 @@ const nextConfig = {
   },
 }
 
-// https://nextjs.org/docs/advanced-features/security-headers
-const ContentSecurityPolicy = `
-    default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' 'https://cdn.splitbee.io/sb.js';
-    style-src 'self' 'unsafe-inline';
-    img-src * blob: data:;
-    media-src 'none';
-    frame-src 'http://localhost:3000/' 'https://jasonsouthin.vercel.app';
-    child-src 'http://localhost:3000' 'https://jasonsouthin.vercel.app';
-    connect-src *;
-    font-src 'self';
-`
-
 const securityHeaders = [
-  // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
-  {
-    key: "Content-Security-Policy",
-    value: ContentSecurityPolicy.replace(/\n/g, ""),
-  },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
     key: "Referrer-Policy",
