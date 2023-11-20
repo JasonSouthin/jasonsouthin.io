@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Journey() {
   return (
     <section>
-      <h1 className="font-bold text-3xl mx-auto">Journey</h1>
+      <h1 className="mx-auto text-3xl font-bold">Journey</h1>
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
         My development journey, ordered by years of experience:
       </p>
@@ -32,7 +32,7 @@ export default function Journey() {
             <p>My very first introduction into coding.</p>
             <p>
               To help my friend sell his drone racing parts online, i created a
-              webiste called{" "}
+              website called{" "}
               <a
                 rel="noopener noreferrer"
                 target="_blank"
@@ -53,12 +53,12 @@ export default function Journey() {
               rel="noopener noreferrer"
               target="_blank"
               href="https://tinyrc.co.za/products/productsAll.html"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+              className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
             >
-              <div className="flex items-center justify-center overflow-hidden h-full">
+              <div className="flex h-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/tinyRc.png"
-                  className="bg-white rounded-sm transform transition-transform duration-500 object-contain p-1"
+                  className="transform rounded-sm bg-white object-contain p-1 transition-transform duration-500"
                   width={40}
                   height={40}
                   alt="tinyRc"
@@ -87,7 +87,7 @@ export default function Journey() {
             <div className="flex justify-center">
               <ArrowUpIcon />
             </div>
-            <h2 className="font-bold text-base  ">
+            <h2 className="text-base font-bold  ">
               First Job:{" "}
               <a
                 rel="noopener noreferrer"
@@ -131,12 +131,12 @@ export default function Journey() {
               rel="noopener noreferrer"
               target="_blank"
               href="https://togo.tallorder.mobi/"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+              className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
             >
               <div className="flex items-center">
                 <Image
                   src="/images/togo.png"
-                  className="bg-white transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  className="transform rounded-sm bg-white object-contain p-1 transition-transform duration-500"
                   width={50}
                   height={50}
                   alt="tinyRc"
@@ -145,7 +145,7 @@ export default function Journey() {
               </div>
               <ArrowIcon />
             </a>
-            <h3 className="font-bold text-base  underline-offset-8">
+            <h3 className="text-base font-bold  underline-offset-8">
               Overview:{" "}
             </h3>
             <div>
@@ -172,14 +172,14 @@ export default function Journey() {
             </div>
           </div>
         </Accordion>
-        <hr className="mt-3 mb-2" />
+        <hr className="mb-2 mt-3" />
         <Accordion heading="2019">
           <div>
             <p>
               Armed with my newly gained experience, I was eager to embark on my
               next adventure and determined to get my second job.
             </p>
-            <h2 className="font-bold text-base mt-0">
+            <h2 className="mt-0 text-base font-bold">
               Second Job:{" "}
               <a
                 rel="noopener noreferrer"
@@ -215,7 +215,7 @@ export default function Journey() {
             <li>Streaming Langauges: Benthos</li>
           </ul>
         </div> */}
-            <h3 className="font-bold text-base  underline-offset-8">
+            <h3 className="text-base font-bold  underline-offset-8">
               Side Projects:{" "}
             </h3>
             <ul className="list-decimal">
@@ -241,12 +241,12 @@ export default function Journey() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://www.thaiholics.com/"
-                  className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+                  className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
                 >
-                  <div className="flex items-center justify-center overflow-hidden h-full">
+                  <div className="flex h-full items-center justify-center overflow-hidden">
                     <Image
                       src="/images/thaiholics.png"
-                      className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                      className="transform rounded-sm object-contain p-1 transition-transform duration-500"
                       width={30}
                       height={30}
                       alt="Thaiholics"
@@ -272,9 +272,9 @@ export default function Journey() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="http://www.bridgewithtim.co.za/"
-                  className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+                  className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
                 >
-                  <div className="flex items-center justify-center overflow-hidden h-full">
+                  <div className="flex h-full items-center justify-center overflow-hidden">
                     <BridgeCardsIcon />
                     <div className="ml-3">Bridge With Tim</div>
                   </div>
@@ -293,7 +293,7 @@ export default function Journey() {
             </div>
           </div>
         </Accordion>
-        <hr className="mt-3 mb-2" />
+        <hr className="mb-2 mt-3" />
         <Accordion heading="2020">
           <div>
             <p>
@@ -306,7 +306,7 @@ export default function Journey() {
               company together. I thought it would be the perfect way to put my
               business and coding skills to the test.
             </p>
-            <h2 className="font-bold text-base  ">
+            <h2 className="text-base font-bold  ">
               First Business:{" "}
               <a
                 rel="noopener noreferrer"
@@ -328,7 +328,7 @@ export default function Journey() {
               promotion and bigger reach for smaller companies
             </p>
 
-            <div className="lg:flex justify-between my-10 sm:block">
+            <div className="my-10 justify-between sm:block lg:flex">
               <div className="border-r pr-10">
                 Tech Stack (2020):
                 <ul>
@@ -360,12 +360,12 @@ export default function Journey() {
               rel="noopener noreferrer"
               target="_blank"
               href="https://next50.vercel.app/"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+              className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
             >
-              <div className="flex items-center justify-center overflow-hidden h-full">
+              <div className="flex h-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/50off.png"
-                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  className="transform rounded-sm object-contain p-1 transition-transform duration-500"
                   width={50}
                   height={50}
                   alt="50%Off"
@@ -374,7 +374,7 @@ export default function Journey() {
               </div>
               <ArrowIcon />
             </a>
-            <h3 className="font-bold text-base  underline-offset-8">
+            <h3 className="text-base font-bold  underline-offset-8">
               Work project:{" "}
             </h3>
             <p>Port an existing publication to React.</p>
@@ -401,7 +401,7 @@ export default function Journey() {
             </div>
           </div>
         </Accordion>
-        <hr className="mt-3 mb-2" />
+        <hr className="mb-2 mt-3" />
         <Accordion heading="2021">
           <div>
             <p>
@@ -424,7 +424,7 @@ export default function Journey() {
                 <li>Training junior developers</li>
               </ul>
             </div>
-            <h3 className="font-bold text-base  underline-offset-8">
+            <h3 className="text-base font-bold  underline-offset-8">
               Side Projects:{" "}
             </h3>
             <ul className="list-decimal">
@@ -446,12 +446,12 @@ export default function Journey() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://divine-agency.vercel.app/"
-                  className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+                  className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
                 >
-                  <div className="flex items-center justify-center overflow-hidden h-full">
+                  <div className="flex h-full items-center justify-center overflow-hidden">
                     <Image
                       src="/images/divine.png"
-                      className="transform bg-white rounded-sm transition-transform duration-500 object-contain p-1"
+                      className="transform rounded-sm bg-white object-contain p-1 transition-transform duration-500"
                       width={30}
                       height={30}
                       alt="50% Off"
@@ -480,12 +480,12 @@ export default function Journey() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://next50.vercel.app/"
-                  className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+                  className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
                 >
-                  <div className="flex items-center justify-center overflow-hidden h-full">
+                  <div className="flex h-full items-center justify-center overflow-hidden">
                     <Image
                       src="/images/50off.png"
-                      className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                      className="transform rounded-sm object-contain p-1 transition-transform duration-500"
                       width={50}
                       height={50}
                       alt="50%Off"
@@ -508,10 +508,10 @@ export default function Journey() {
             </div>
           </div>
         </Accordion>
-        <hr className="mt-3 mb-2" />
+        <hr className="mb-2 mt-3" />
         <Accordion heading="2022">
           <div>
-            <h2 className="font-bold text-base  ">
+            <h2 className="text-base font-bold  ">
               Second Business:{" "}
               <a
                 rel="noopener noreferrer"
@@ -555,12 +555,12 @@ export default function Journey() {
               rel="noopener noreferrer"
               target="_blank"
               href="https://hayibo.io"
-              className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+              className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
             >
-              <div className="flex items-center justify-center overflow-hidden h-full">
+              <div className="flex h-full items-center justify-center overflow-hidden">
                 <Image
                   src="/images/hayibo.png"
-                  className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                  className="transform rounded-sm object-contain p-1 transition-transform duration-500"
                   width={40}
                   height={40}
                   alt="Hayibo"
@@ -584,10 +584,10 @@ export default function Journey() {
             </div>
           </div>
         </Accordion>
-        <hr className="mt-3 mb-2" />
+        <hr className="mb-2 mt-3" />
         <Accordion heading="2023">
           <div>
-            <h2 className="font-bold text-base  ">
+            <h2 className="text-base font-bold  ">
               Portfolio:{" "}
               <a
                 rel="noopener noreferrer"
@@ -617,12 +617,12 @@ export default function Journey() {
                   rel="noopener noreferrer"
                   target="_blank"
                   href="https://jasonsouthin.vercel.app/"
-                  className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between"
+                  className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
                 >
-                  <div className="flex items-center justify-center overflow-hidden h-full">
+                  <div className="flex h-full items-center justify-center overflow-hidden">
                     <Image
                       src="/og.jpg"
-                      className="transform rounded-sm transition-transform duration-500 object-contain p-1"
+                      className="transform rounded-sm object-contain p-1 transition-transform duration-500"
                       width={40}
                       height={40}
                       alt="Hayibo"
