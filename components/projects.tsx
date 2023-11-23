@@ -45,13 +45,6 @@ export default function ProjectComponent() {
         bg="bg-white"
         year="2018"
       />
-      <Project
-        src="/images/tinyRc.png"
-        title="TinyRc"
-        link="tinyrc.co.za"
-        bg="bg-white"
-        year="2018"
-      />
     </ul>
   )
 }
