@@ -80,7 +80,7 @@ export default function AboutPage({ searchParams }: Props) {
         <Link
           href="/about?modal=true"
           scroll={false}
-          className="flex w-full lg:max-w-full max-w-[] border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between m-0"
+          className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-lg p-4 no-underline items-center text-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900 hover:bg-neutral-100 transition-all justify-between m-0"
         >
           <div className="flex items-center justify-center overflow-hidden h-full min-h-[3rem]">
             <Image
