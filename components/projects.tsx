@@ -6,7 +6,7 @@ import clsx from "clsx"
 
 export default function ProjectComponent() {
   return (
-    <ul className="grid grid-rows-2 lg:grid-cols-3 grid-cols-2 list-none gap-y-8 gap-x-5">
+    <ul className="grid grid-rows-2 auto-cols-auto grid-flow-row-dense list-none gap-y-4 gap-x-5 ">
       {/* <Project
         src="/og.jpg"
         title="Jason Southin"
@@ -51,8 +51,8 @@ export default function ProjectComponent() {
 
 function Project({ src, title, link, bg, year, closed }: Project) {
   return (
-    <li>
-      <p className="text-neutral-400 text-xs">
+    <li className="">
+      <p className="text-neutral-400 text-xs mb-1">
         {year} {closed ? "(Shut down)" : undefined}
       </p>
       <a
