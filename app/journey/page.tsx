@@ -25,7 +25,7 @@ export default function Journey() {
       <p className="my-5 text-neutral-800 dark:text-neutral-200">
         My development journey, ordered by years of experience:
       </p>
-      <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
+      <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200 w-full">
         <div />
         <Accordion heading="2023">
           <div>
