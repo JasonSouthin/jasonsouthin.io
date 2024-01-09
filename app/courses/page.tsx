@@ -113,11 +113,7 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-      </div>
-      <p className="my-5 text-lg text-neutral-800 dark:text-neutral-200">
-        Current:
-      </p>
-      <div className="flex gap-2 flex-col ml-2">
+        <hr className="my-1 border-[#e9ebfc]" />
         <details>
           <summary className="mb-2">
             The Last Algorithms Course You'll Need - ThePrimeagen
@@ -140,7 +136,11 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1" />
+      </div>
+      <p className="my-5 text-lg text-neutral-800 dark:text-neutral-200">
+        Current:
+      </p>
+      <div className="flex gap-2 flex-col ml-2">
         <details className="mt-2">
           <summary className="mb-2">Css For Js - Josh W Comeau</summary>
           <a
