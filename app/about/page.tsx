@@ -63,12 +63,12 @@ export default function AboutPage({ searchParams }: Props) {
           <li>Databases: PlanetScale, MySql, PostgreSQL, MongoDB</li>
           <li>Cloud Providers: GCP / Strapi / Heroku / Redis / Upstash </li>
           <li>CMS: Strapi / Sanity / Contentful</li>
-          <li>Knowldge in Advertisments / Advertisment Management ( GAM ) </li>
+          <li>Knowledge in Advertisments / Advertisment Management ( GAM ) </li>
           <li>
-            Knowldge in user tracking / analytics / reports ( GTM / Kibana /
+            Knowledge in user tracking / analytics / reports ( GTM / Kibana /
             Looker studio ){" "}
           </li>
-          <li>Knowldge in Search ( Elastic / Fuzzy ) </li>
+          <li>Knowledge in Search ( Elastic / Fuzzy ) </li>
         </ul>
         <hr />
         <h1 className="font-bold text-3xl font-serif">Qaulifications</h1>
