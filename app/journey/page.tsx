@@ -48,7 +48,7 @@ export default function Journey() {
                 <div>
                   Tech Stack:
                   <ul>
-                    <li>Langauges: Typescript / React / Css </li>
+                    <li>Languages: Typescript / React / Css </li>
                     <li>Framework: NextJs</li>
                     <li>Database: PlanetScale</li>
                     <li>Hosting: Vercel </li>
@@ -109,7 +109,7 @@ export default function Journey() {
             <div>
               Tech Stack:
               <ul>
-                <li>Langauges: Typescript / React / CSS </li>
+                <li>Languages: Typescript / React / CSS </li>
                 <li>Framework: NextJs</li>
                 <li>Database: SQL</li>
                 <li>
@@ -196,7 +196,7 @@ export default function Journey() {
                 <div>
                   Tech Stack:
                   <ul>
-                    <li>Langauges: React / Typescript / Tailwindcss </li>
+                    <li>Languages: React / Typescript / Tailwindcss </li>
                     <li>Markdown: MDX</li>
                     <li>Hosting: Vercel</li>
                     <li>Mail: Sendgrid</li>
@@ -226,7 +226,7 @@ export default function Journey() {
                 <div>
                   Tech Stack:
                   <ul>
-                    <li>Langauges: Typescript / React / SCSS </li>
+                    <li>Languages: Typescript / React / SCSS </li>
                     <li>Framework: NextJs</li>
                     <li>Database: SQL</li>
                     <li>CMS: Strapi</li>
@@ -307,7 +307,7 @@ export default function Journey() {
               <div className="border-r pr-10">
                 Tech Stack (2020):
                 <ul>
-                  <li>Langauges: JS / CSS </li>
+                  <li>Languages: JS / CSS </li>
                   <li>Routing: Express</li>
                   <li>Bundler: Webpack</li>
                   <li>Database: MongoDB Compass</li>
@@ -320,7 +320,7 @@ export default function Journey() {
               <div>
                 Rebuild: Tech Stack (2021):
                 <ul>
-                  <li>Langauges: Typescript / React / SCSS </li>
+                  <li>Languages: Typescript / React / SCSS </li>
                   <li>Framework: NextJs</li>
                   <li>Database: SQL</li>
                   <li>CMS: Strapi</li>
@@ -356,7 +356,7 @@ export default function Journey() {
             <div>
               Tech Stack:
               <ul>
-                <li>Langauges: React / Typescript / Tailwindcss </li>
+                <li>Languages: React / Typescript / Tailwindcss </li>
                 <li>Hosting: Vercel </li>
                 <li>Tools: Docker</li>
                 <li>Integrations: Disqus</li>
@@ -404,10 +404,10 @@ export default function Journey() {
             {/* <div>
           Tech Stack:
           <ul>
-            <li>Langauges: Python / Javascript / SQL / React / CSS / HTML </li>
+            <li>Languages: Python / Javascript / SQL / React / CSS / HTML </li>
             <li>Hosting: GCP, App Engine </li>
             <li>Tools: Grunt / Docker</li>
-            <li>Templeting Langauges: Jinja2 </li>
+            <li>Templeting Languages: Jinja2 </li>
             <li>
               Web services: GA / GTM / GAM / DFP / Google Looker Studio /
               Elastic Search
@@ -416,7 +416,7 @@ export default function Journey() {
               Integrations: Google News Room / Viafoura / Taboola / Chartbeat /
               Disqus{" "}
             </li>
-            <li>Streaming Langauges: Benthos</li>
+            <li>Streaming Languages: Benthos</li>
           </ul>
         </div> */}
             <h3 className="text-base font-bold  underline-offset-8">
@@ -436,7 +436,7 @@ export default function Journey() {
                 <div>
                   Tech Stack:
                   <ul>
-                    <li>Langauges: Python / JS / Jinja2 / HTML / SCSS </li>
+                    <li>Languages: Python / JS / Jinja2 / HTML / SCSS </li>
                     <li>CMS: CosMos</li>
                     <li>Hosting: GCP</li>
                   </ul>
@@ -468,7 +468,7 @@ export default function Journey() {
                 <div>
                   Tech Stack:
                   <ul>
-                    <li>Langauges: JS / HTML / CSS / jQuery </li>
+                    <li>Languages: JS / HTML / CSS / jQuery </li>
                     <li>Hosting: FTP (FileZilla)</li>
                   </ul>
                 </div>
@@ -515,7 +515,7 @@ export default function Journey() {
             <div>
               Tech stack:
               <ul>
-                <li>Langauges: Vanilla JS, HTML, CSS</li>
+                <li>Languages: Vanilla JS, HTML, CSS</li>
                 <li>Database: Firebase Realtime Database</li>
                 <li>Hosting: Firebase Hosting</li>
               </ul>
@@ -591,7 +591,7 @@ export default function Journey() {
             <div>
               Tech stack:
               <ul>
-                <li>Langauges: Angular JS, Sass / Html</li>
+                <li>Languages: Angular JS, Sass / Html</li>
                 <li>Backend: AWS Lamda / Nodejs</li>
                 <li>Database/Hosting: Amazon S3</li>
                 <li>CDN: Amazon Cloudfront</li>
