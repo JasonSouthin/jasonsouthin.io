@@ -101,9 +101,9 @@ export default function Journey() {
             <p>
               Hayibo is a luxury subscription box company based in Cape Town,
               South Africa. We deliver top-brand luxury items to our customers
-              on a monthly basis, including whiskey, watches, jewellery, and
-              more. Our goal is to make it easy for our customers to enjoy the
-              finer things in life without having to worry about the hassle of
+              every month, including whiskey, watches, jewelry, and more. Our
+              goal is to make it easy for our customers to enjoy the finer
+              things in life without having to worry about the hassle of
               shopping.
             </p>
             <div>
