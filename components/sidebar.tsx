@@ -18,14 +18,14 @@ const navItems = {
   "/journey": {
     name: "journey",
   },
-  "/courses": {
-    name: "courses",
-  },
   "/blog": {
     name: "blog",
   },
   "/guestbook": {
     name: "guestbook",
+  },
+  "/courses": {
+    name: "courses",
   },
   "/uses": {
     name: "uses",
