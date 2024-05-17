@@ -1,10 +1,11 @@
 import Link from "next/link"
 import Image from "next/image"
-import { getBlogViews, getGithubContributions, getTopTracks } from "lib/metrics"
+import { getGithubContributions, getTopTracks } from "lib/metrics"
 import { ArrowIcon, SpotifyIcon, GitHubIcon, ViewsIcon } from "components/icons"
 import { name, about, bio, avatar } from "lib/info"
 import { Suspense } from "react"
 import { Skeleton } from "components/skeleton/skeleton"
+import { getBlogViews } from "./db/queries"
 
 export const revalidate = 60
 
@@ -18,7 +19,7 @@ export default async function HomePage() {
       <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
         <Image
           alt={name}
-          className="rounded-full grayscale object-cover h-24"
+          className="rounded-full object-cover h-24"
           src={avatar}
           placeholder="blur"
           width={100}
@@ -81,30 +82,34 @@ async function PeronsalInformation() {
         rel="noopener noreferrer"
         target="_blank"
         href="https://github.com/JasonSouthin"
-        className="flex items-center gap-2"
+        className="flex items-center gap-2 dark:hover:text-neutral-200"
       >
         <GitHubIcon />
         {`${githubCount?.toLocaleString()} contributions in the last year`}
       </a>
       <div className="flex items-center gap-2">
         <SpotifyIcon />
-        {tracks?.map((track, index) =>
-          track ? (
-            <a
-              key={track.songUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-              href={track.songUrl}
-            >
-              <span className="hover:underline">{`#${index + 1} ${
-                track.title
-              } `}</span>
-              <span>- top track this month</span>
-            </a>
-          ) : undefined
+        {tracks?.map(
+          (track: { songUrl: string; title: string }, index: number) =>
+            track ? (
+              <a
+                key={track.songUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+                href={track.songUrl}
+              >
+                <span className="hover:underline dark:hover:text-neutral-200">{`#${index + 1} ${
+                  track.title
+                } `}</span>
+                <span>- top track this month</span>
+              </a>
+            ) : undefined,
         )}
       </div>
-      <Link href="/blog" className="flex items-center">
+      <Link
+        href="/blog"
+        className="flex items-center dark:hover:text-neutral-200"
+      >
         <ViewsIcon />
         {`${views?.toLocaleString()} blog views all time`}
       </Link>

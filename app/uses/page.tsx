@@ -17,15 +17,14 @@ export default function UsesPage() {
         <h3 id="computer-office">Computer / Office</h3>
         <ul>
           <li>14&quot; Macbook Pro M1 (2022)</li>
-          <li>31.5&quot; Dell UltraWide S3422DWG</li>
+          <li>34&quot; Dell UltraWide S3422DWG</li>
           <li>Logitech Pro Superlight</li>
           <li>Apple Magic Keyboard</li>
-          <li>Corsair Gaming Chair</li>
         </ul>
         <h3 id="coding">Coding</h3>
         <ul>
           <li>
-            Editor: VSCode (
+            Editor: VSCode || Zed (
             <a href="https://gist.github.com/JasonSouthin/31e2bf48ceba681dfca30a63285f7fee">
               Settings / Extensions
             </a>
@@ -49,9 +48,6 @@ export default function UsesPage() {
           <li>Obsidian</li>
           <li>Insomnia</li>
           <li>Spotify</li>
-          <li>Grammarly</li>
-          <li>Texts</li>
-          <li>Raycast</li>
           <li>TablePlus</li>
         </ul>
         <h3 id="other-tech">Other Tech</h3>
@@ -60,7 +56,6 @@ export default function UsesPage() {
           <li>Apple Watch</li>
           <li>Apple iPhone</li>
           <li>Apple Ipad mini series 6</li>
-          <li>BMW 1 series 2019</li>
         </ul>
       </div>
     </section>

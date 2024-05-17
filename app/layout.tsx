@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jason Southin",
     description: "Developer, writer, and creator.",
-    url: "https://jasonsouthin.io",
+    url: "https://jasonsouthin.com",
     siteName: "Jason Southin",
     images: [
       {
-        url: "https://jasonsouthin.io/og.jpg",
+        url: "https://jasonsouthin.com/og.jpg",
         width: 1920,
         height: 1080,
       },
@@ -79,7 +79,7 @@ export default function RootLayout({
       className={clsx(
         "text-black bg-white dark:text-white dark:bg-[#111010]",
         kaisei.variable,
-        loadingFont.variable
+        loadingFont.variable,
       )}
     >
       <Script

@@ -5,6 +5,9 @@ import { allBlogs } from "contentlayer/generated"
 import { getTweets } from "lib/twitter"
 import Balancer from "react-wrap-balancer"
 import ViewCounter from "../view-counter"
+import { Suspense, cache } from "react"
+import { getViewsCount } from "app/db/queries"
+import { increment } from "app/db/actions"
 
 export async function generateStaticParams() {
   return allBlogs.map((post) => ({
@@ -28,8 +31,8 @@ export async function generateMetadata({
     slug,
   } = post
   const ogImage = image
-    ? `https://jasonsouthin.io${image}`
-    : `https://jasonsouthin.io/api/og?title=${title}`
+    ? `https://jasonsouthin.com${image}`
+    : `https://jasonsouthin.com/api/og?title=${title}`
 
   return {
     title,
@@ -39,7 +42,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://jasonsouthin.io/blog/${slug}`,
+      url: `https://jasonsouthin.com/blog/${slug}`,
       images: [
         {
           url: ogImage,
@@ -77,9 +80,20 @@ export default async function Blog({ params }) {
           {post.publishedAt}
         </div>
         <div className="h-[0.2em] bg-neutral-50 dark:bg-neutral-800 mx-2" />
-        <ViewCounter slug={post.slug} trackView />
+        <Suspense fallback={<p className="h-5"></p>}>
+          <Views slug={post.slug} />
+        </Suspense>
       </div>
       <Mdx code={post.body.code} tweets={tweets} />
     </section>
   )
+}
+
+let incrementViews = cache(increment)
+
+async function Views({ slug }: { slug: string }) {
+  let views = await getViewsCount()
+  incrementViews(slug)
+
+  return <ViewCounter allViews={views} slug={slug} />
 }

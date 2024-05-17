@@ -1,7 +1,7 @@
-# jasonsouthin.io
+# jasonsouthin.com
 
 - **Framework**: [Next.js](https://nextjs.org/)
-- **Database**: [PlanetScale](https://planetscale.com)
+- **Database**: [Postgres](https://vercel.com/storage/postgres)
 - **Authentication**: [NextAuth.js](https://next-auth.js.org)
 - **Deployment**: [Vercel](https://vercel.com)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com)

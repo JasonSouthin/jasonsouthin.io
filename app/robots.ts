@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: "*",
       },
     ],
-    sitemap: "https://jasonsouthin.io/sitemap.xml",
-    host: "https://jasonsouthin.io",
+    sitemap: "https://jasonsouthin.com/sitemap.xml",
+    host: "https://jasonsouthin.com",
   }
 }

@@ -1,23 +1,13 @@
 import "server-only"
 
 import { Octokit } from "@octokit/rest"
-import { queryBuilder } from "lib/planetscale"
 import { cache } from "react"
 import { getAccessToken } from "./spotify"
 import { Spotify } from "./types/spotify"
 import { Github } from "./types/github"
 
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range=short_term`
-const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
-
-export const getBlogViews = cache(async () => {
-  const data = await queryBuilder
-    .selectFrom("views")
-    .select(["count"])
-    .execute()
-
-  return data.reduce((acc, curr) => acc + Number(curr.count), 0)
-})
+// const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
 
 export async function getTweetCount() {
   if (!process.env.TWITTER_API_TOKEN) {
@@ -30,7 +20,7 @@ export async function getTweetCount() {
       headers: {
         Authorization: `Bearer ${process.env.TWITTER_API_TOKEN}`,
       },
-    }
+    },
   )
 
   const { data } = await response.json()
@@ -77,7 +67,7 @@ export const getStarCount = cache(async () => {
 
   const req = await octokit.request("GET /repos/{owner}/{repo}", {
     owner: "jasonsouthin",
-    repo: "jasonsouthin.io",
+    repo: "jasonsouthin.com",
   })
 
   return req.data.stargazers_count
@@ -85,7 +75,7 @@ export const getStarCount = cache(async () => {
 
 export const getGithubContributions = cache(async (): Promise<string> => {
   const response = await fetch(
-    `https://github-contributions-api.deno.dev/JasonSouthin.json`
+    `https://github-contributions-api.deno.dev/JasonSouthin.json`,
   )
 
   const { totalContributions } = await response.json()

@@ -34,9 +34,9 @@ export default function Journey() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://jasonsouthin.io"
+                href="https://jasonsouthin.com"
               >
-                jasonsouthin.io
+                jasonsouthin.com
               </a>
             </h2>
             <ul className="list-decimal">
@@ -50,7 +50,7 @@ export default function Journey() {
                   <ul>
                     <li>Languages: Typescript / React / Css </li>
                     <li>Framework: NextJs</li>
-                    <li>Database: PlanetScale</li>
+                    <li>Database: Postgres</li>
                     <li>Hosting: Vercel </li>
                     <li>Tracking: Splitbee </li>
                   </ul>
@@ -78,7 +78,7 @@ export default function Journey() {
             <div>
               Skills learnt this year:
               <ul>
-                <li>PlanetScale</li>
+                <li>Postgres</li>
                 <li>Spotify integration</li>
                 <li>Localization - i18n</li>
               </ul>
@@ -93,7 +93,7 @@ export default function Journey() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://hayibo.io"
+                href="https://hayibo.net"
               >
                 Hayibo
               </a>
@@ -131,7 +131,7 @@ export default function Journey() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://hayibo.io"
+              href="https://hayibo.net"
               className="flex w-full items-center justify-between rounded-lg border border-neutral-200 p-4 text-neutral-800 no-underline transition-all hover:bg-neutral-100 dark:border-neutral-800 dark:text-neutral-200 hover:dark:bg-neutral-900"
             >
               <div className="flex h-full items-center justify-center overflow-hidden">

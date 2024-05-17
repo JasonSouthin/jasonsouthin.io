@@ -10,40 +10,40 @@ export default function ProjectComponent() {
       {/* <Project
         src="/og.jpg"
         title="Jason Southin"
-        link="jasonsouthin.io"
+        link="jasonsouthin.com"
         year="2023"
       /> */}
       <Project
         src="/images/hayibo.png"
         title="Hayibo"
-        link="hayibo.io"
-        year="2022"
+        link="hayibo.net"
+        year="2022 ( 5 years experience )"
       />
       <Project
         src="/images/divine.png"
         title="Divine Coordination"
         link="divine-agency.vercel.app"
-        year="2021"
+        year="2021 ( 4 years experience )"
         bg="bg-white"
       />
       <Project
         src="/images/thaiholics.png"
         title="Thaiholics"
         link="thaiholics.com"
-        year="2019"
+        year="2019 ( 2 years experience )"
       />
       <Project
         src="/images/bridge.svg"
         title="Bridge With Tim"
         link="bridgewithtim.co.za"
-        year="2019"
+        year="2019 ( 2 years experience )"
       />
       <Project
         src="/images/togo.png"
         title="Togo"
         link="togo.tallorder.mobi"
         bg="bg-white"
-        year="2018"
+        year="2018 ( 1 year experience )"
       />
     </ul>
   )
@@ -68,7 +68,7 @@ function Project({ src, title, link, bg, year, closed }: Project) {
               "transform rounded-sm transition-transform duration-500 object-contain p-1",
               {
                 [`${bg}`]: bg,
-              }
+              },
             )}
             width={40}
             height={40}

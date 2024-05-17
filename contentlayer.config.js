@@ -27,9 +27,9 @@ const computedFields = {
       dateModified: doc.publishedAt,
       description: doc.summary,
       image: doc.image
-        ? `https://jasonsouthin.io${doc.image}`
-        : `https://jasonsouthin.io/api/og?title=${doc.title}`,
-      url: `https://jasonsouthin.io/blog/${doc._raw.flattenedPath}`,
+        ? `https://jasonsouthin.com${doc.image}`
+        : `https://jasonsouthin.com/api/og?title=${doc.title}`,
+      url: `https://jasonsouthin.com/blog/${doc._raw.flattenedPath}`,
       author: {
         "@type": "Person",
         name: "Jason Southin",

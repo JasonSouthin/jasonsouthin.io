@@ -1,26 +1,14 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 
-import {
-  GitHubIcon,
-  SpotifyIcon,
-  ArrowIcon,
-  LinkedInIcon,
-} from "components/icons"
-
-import Link from "next/link"
-import Modal from "components/modal"
-
-type Props = {
-  searchParams: Record<string, string> | null | undefined
-}
+import { ArrowIcon } from "components/icons"
 
 export const metadata: Metadata = {
   title: "Courses",
   description: "Jason Southin completed courses",
 }
 
-export default function AboutPage({ searchParams }: Props) {
+export default function AboutPage() {
   return (
     <section className="w-full pr-10">
       <h1 className="font-bold text-3xl font-serif">Courses</h1>
@@ -29,7 +17,9 @@ export default function AboutPage({ searchParams }: Props) {
       </p>
       <div className="flex gap-2 flex-col ml-2">
         <details>
-          <summary className="mb-2 ">Just Javascript - Dan Abramov</summary>
+          <summary className="mb-2 cursor-pointer">
+            Just Javascript - Dan Abramov
+          </summary>
           <a
             href="https://justjavascript.com/"
             target="_blank"
@@ -48,9 +38,11 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1 " />
+
         <details className="mt-2">
-          <summary className="mb-2">Joy of react - Josh W Comeau</summary>
+          <summary className="mb-2 cursor-pointer">
+            Joy of react - Josh W Comeau
+          </summary>
           <a
             href="https://courses.joshwcomeau.com/certificate/652c07266551ca9057a9a6f5"
             target="_blank"
@@ -69,9 +61,9 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1 " />
+
         <details className="mt-2">
-          <summary className="mb-2 ">
+          <summary className="mb-2 cursor-pointer">
             NextJS & Typescript & Shopify - Filip Jerga
           </summary>
           <a
@@ -92,9 +84,11 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1 border-[#e9ebfc]" />
+
         <details className="mt-2">
-          <summary className="mb-2">NextJS & Sanity CMS - Filip Jerga</summary>
+          <summary className="mb-2 cursor-pointer">
+            NextJS & Sanity CMS - Filip Jerga
+          </summary>
           <a
             href="https://eincode.com/courses/next-js-with-sanity-cms-serverless-blog-app-w-vercel"
             target="_blank"
@@ -113,9 +107,9 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1 border-[#e9ebfc]" />
+
         <details>
-          <summary className="mb-2">
+          <summary className="mb-2 cursor-pointer">
             The Last Algorithms Course You'll Need - ThePrimeagen
           </summary>
           <a
@@ -142,7 +136,9 @@ export default function AboutPage({ searchParams }: Props) {
       </p>
       <div className="flex gap-2 flex-col ml-2">
         <details className="mt-2">
-          <summary className="mb-2">Css For Js - Josh W Comeau</summary>
+          <summary className="mb-2 cursor-pointer">
+            Css For Js - Josh W Comeau
+          </summary>
           <a
             href="https://css-for-js.dev/"
             target="_blank"
@@ -161,9 +157,11 @@ export default function AboutPage({ searchParams }: Props) {
             quality="100"
           />
         </details>
-        <hr className="my-1" />
+
         <details className="mt-2">
-          <summary className="mb-2">Total Typescript - Matt Pocock</summary>
+          <summary className="mb-2 cursor-pointer">
+            Total Typescript - Matt Pocock
+          </summary>
           <a
             href="https://www.totaltypescript.com/"
             target="_blank"

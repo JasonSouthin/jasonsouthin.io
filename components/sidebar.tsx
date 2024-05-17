@@ -12,14 +12,14 @@ const navItems = {
   "/about": {
     name: "about",
   },
-  "/courses": {
-    name: "courses",
-  },
   "/projects": {
     name: "projects",
   },
   "/journey": {
     name: "journey",
+  },
+  "/courses": {
+    name: "courses",
   },
   "/blog": {
     name: "blog",
@@ -106,7 +106,7 @@ export default function Navbar() {
                       {
                         "text-neutral-500": !isActive,
                         "font-bold": isActive,
-                      }
+                      },
                     )}
                   >
                     <span className="relative py-[5px] px-[10px]">
